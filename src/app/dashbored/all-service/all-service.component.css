@@ -1,0 +1,13 @@
+.mat-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mat-cell,
+.mat-header-cell {
+    padding: 8px 16px;
+}
+
+.delete-button {
+    padding: 6px;
+}

@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="card p-5 mt-2">
+        <mat-form-field appearance="outline">
+            <mat-label>Service Name</mat-label>
+            <input matInput placeholder="Enter service name" [(ngModel)]="service.name" />
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Description</mat-label>
+            <input matInput maxlength="256" placeholder="Enter description..." [(ngModel)]="service.description" />
+        </mat-form-field>
+
+        <br />
+
+        <!-- Additional form fields for other properties -->
+        <mat-form-field class="example-full-width">
+            <mat-label>Version</mat-label>
+            <input matInput placeholder="Enter version..." [(ngModel)]="service.version" />
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Endpoint</mat-label>
+            <input matInput placeholder="Enter endpoint..." [(ngModel)]="service.endpoint" />
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Status</mat-label>
+            <mat-select [(ngModel)]="service.status">
+                <mat-option value="true">Active</mat-option>
+                <mat-option value="false">Inactive</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Configuration</mat-label>
+            <input matInput placeholder="Enter configuration..." [(ngModel)]="service.configuration" />
+        </mat-form-field>
+
+        <br />
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Pricing</mat-label>
+            <input matInput placeholder="Enter pricing..." [(ngModel)]="service.pricing" />
+        </mat-form-field>
+
+        <br />
+
+        <div class="text-center">
+            <button mat-raised-button (click)="clearForm()" color="" cancel>
+      cancel
+    </button>
+            <button mat-raised-button (click)="createService()" color="primary">
+      Create Service
+    </button>
+        </div>
+    </div>
+</div>
